@@ -32,7 +32,7 @@ def MainToolbar(root, parentpanel = None, use_wrapsizer = False):
     root.rescanbtn = make_autosize_button(parentpanel, _("Port"), root.rescanports, _("Communication Settings\nClick to rescan ports"))
     self.Add(root.rescanbtn, 0, wx.TOP | wx.LEFT, 0)
 
-    root.serialport = wx.ComboBox(parentpanel, -1, choices = root.scanserial(),
+    root.serialport = wx.ComboBox(parentpanel, -1, size = (140,-1), choices = root.scanserial(),
                                   style = wx.CB_DROPDOWN)
     root.serialport.SetToolTip(wx.ToolTip(_("Select Port Printer is connected to")))
     root.rescanports()
