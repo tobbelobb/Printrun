@@ -291,6 +291,7 @@ class MainWindow(wx.Frame):
         self.SetMinSize(self.ClientToWindowSize(minsize))  # client to window
 
         self.cbuttons_reload()
+        left_pane.toggle(wx.EVT_BUTTON)
 
     def gui_set_connected(self):
         self.xyb.enable()

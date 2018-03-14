@@ -444,7 +444,7 @@ class ControlsSizer(wx.GridBagSizer):
         self.Add(root.xyb, pos = (1, 0), span = (1, 4), flag = wx.ALIGN_CENTER)
         root.zb = ZButtonsMini(parentpanel, root.moveZ, root.bgcolor)
         self.Add(root.zb, pos = (0, 4), span = (2, 1), flag = wx.ALIGN_CENTER)
-        wx.CallAfter(root.xyb.SetFocus)
+        #wx.CallAfter(root.xyb.SetFocus)
 
         pos_mapping = {"motorsoff": (0, 0),
                        }
