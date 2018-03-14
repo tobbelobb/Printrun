@@ -57,14 +57,14 @@ def MainToolbar(root, parentpanel = None, use_wrapsizer = False):
     else:
         root.connectbtn.Reparent(parentpanel)
     self.Add(root.connectbtn)
-    if not hasattr(root, "resetbtn"):
-        root.resetbtn = make_autosize_button(parentpanel, _("Reset"), root.reset, _("Reset the printer"))
-        root.statefulControls.append(root.resetbtn)
-    else:
-        root.resetbtn.Reparent(parentpanel)
-    self.Add(root.resetbtn)
+    #if not hasattr(root, "resetbtn"):
+    #    root.resetbtn = make_autosize_button(parentpanel, _("Reset"), root.reset, _("Reset the printer"))
+    #    root.statefulControls.append(root.resetbtn)
+    #else:
+    #    root.resetbtn.Reparent(parentpanel)
+    #self.Add(root.resetbtn)
 
-    self.AddStretchSpacer(prop = 1)
+    #self.AddStretchSpacer(prop = 1)
 
     root.loadbtn = make_autosize_button(parentpanel, _("Load file"), root.loadfile, _("Load a 3D model file"), self)
     root.sdbtn = make_autosize_button(parentpanel, _("SD"), root.sdmenu, _("SD Card Printing"), self)
@@ -82,8 +82,8 @@ def MainToolbar(root, parentpanel = None, use_wrapsizer = False):
     else:
         root.pausebtn.Reparent(parentpanel)
     self.Add(root.pausebtn)
-    root.offbtn = make_autosize_button(parentpanel, _("Off"), root.off, _("Turn printer off"), self)
-    root.printerControls.append(root.offbtn)
+    #root.offbtn = make_autosize_button(parentpanel, _("Off"), root.off, _("Turn printer off"), self)
+    #root.printerControls.append(root.offbtn)
 
     self.AddStretchSpacer(prop = 4)
 
